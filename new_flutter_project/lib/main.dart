@@ -8,7 +8,7 @@ void main() {
       title: Center(child: Text("My First Project")),
     ),
     body: Center(
-        child: Image(image: NetworkImage("https://neopraxis.mx/wp-content/uploads/2022/06/Que-es-la-psicologia.jpg") ,
+        child: Image(image: AssetImage ("Image/psicologia imagen flutter.jpeg") ,
         )
     ),
     bottomNavigationBar: TextButton(
