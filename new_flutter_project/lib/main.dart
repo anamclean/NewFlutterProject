@@ -11,7 +11,7 @@ void main() {
      color: Colors.purpleAccent,
      child: Row (
        children: [Center(
-      child: Image(image: AssetImage ("Image/psicologiaimagenflutter.jpeg") ,
+      child: Image(image: AssetImage ("Image/psi.jpeg") ,
      )
      ),
        ],
