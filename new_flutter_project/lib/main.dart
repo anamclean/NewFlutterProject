@@ -7,9 +7,15 @@ void main() {
       backgroundColor: Colors.blue,
       title: Center(child: Text("My First Project")),
     ),
-    body: Center(
-        child: Image(image: AssetImage ("Image/psicologia imagen flutter.jpeg") ,
-        )
+    body: Container (
+     color: Colors.purpleAccent,
+     child: Row (
+       children: [Center(
+      child: Image(image: AssetImage ("Image/psicologiaimagenflutter.jpeg") ,
+     )
+     ),
+       ],
+  ),
     ),
     bottomNavigationBar: TextButton(
         child: Text("Click me"),
