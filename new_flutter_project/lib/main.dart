@@ -7,20 +7,40 @@ void main() {
       backgroundColor: Colors.blue,
       title: Center(child: Text("My First Project")),
     ),
-    body: Container (
-     color: Colors.purpleAccent,
-     child: Row (
-       children: [Center(
-      child: Image(image: AssetImage ("Image/psi.jpeg") ,
-     )
-     ),
-       ],
-  ),
+    body: Container(
+      child: Column(
+        children: [
+          Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image(
+                image: AssetImage("Image/psy.jpeg"),
+                height: 175,
+              )),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                hintText: 'Enter email',
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  hintText: 'Enter Password',
+                )),
+          )
+        ],
+      ),
     ),
     bottomNavigationBar: TextButton(
         child: Text("Click me"),
         style: TextButton.styleFrom(
-          foregroundColor: Colors.amber, backgroundColor: Colors.blue,
+          foregroundColor: Colors.amber,
+          backgroundColor: Colors.blue,
         ),
         onPressed: () {}),
   )));
